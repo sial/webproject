@@ -1,32 +1,29 @@
 <template>
-  <div class="login-box">
-    <div class="login-logo">
-      <p>Webproject</p>
-    </div>
-    <div class="login-box-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+  <div class="login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <p class="title">Webproject</p>
+      </div>
+      <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index2.html" method="post">
-        <div class="form-group has-feedback">
-          <input type="email" class="form-control" placeholder="Email">
-          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-        </div>
-        <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Password">
-          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-        </div>
-        <div class="row">
-          <!-- /.col -->
-          <div class="col-xs-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+        <form action="../../index2.html" method="post">
+          <div class="form-group has-feedback">
+            <input type="login" class="form-control" placeholder="Login">
+            <span class="fa fa-user form-control-feedback" aria-hidden="true"></span>
           </div>
-          <!-- /.col -->
-        </div>
-      </form>
-
-      <!-- /.social-auth-links -->
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password">
+            <span class="fa fa-lock form-control-feedback" aria-hidden="true"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 pull-right">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <!-- /.login-box-body -->
   </div>
 </template>
 
@@ -41,7 +38,18 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .title{
+    font-family: "Open-Sans Regular", sans-serif;
+  }
 
+  .login-page{
+    background-color: #e8e8e8;
+    height: 100%;
+  }
+
+  .login-box{
+    margin-top: 0;
+    padding-top: 20px;
+  }
 </style>
