@@ -8,6 +8,8 @@
   export default {
     name: 'app'
   }
+
+  document.title = 'Webproject';
 </script>
 
 <style>

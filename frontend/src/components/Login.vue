@@ -36,6 +36,8 @@ export default {
     }
   }
 }
+
+document.title = 'Login';
 </script>
 
 <style scoped>
