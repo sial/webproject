@@ -28,15 +28,6 @@
 </template>
 
 <script>
-export default {
-  name: 'Login',
-  data () {
-    return {
-      msg: 'Login Page'
-    }
-  }
-}
-
 document.title = 'Login';
 </script>
 

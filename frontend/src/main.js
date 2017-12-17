@@ -8,7 +8,6 @@ import "../node_modules/admin-lte/dist/css/AdminLTE.min.css"
 import "../node_modules/font-awesome/css/font-awesome.min.css"
 import "./assets/css/app.css"
 
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -5,8 +5,17 @@
 </template>
 
 <script>
+  import router from './router'
+  import store from './store'
+
+
   export default {
-    name: 'app'
+
+    beforeCreate() {
+      if (!store.state.isLogged) {
+        router.push('/login')
+      }
+    }
   }
 
   document.title = 'Webproject';
