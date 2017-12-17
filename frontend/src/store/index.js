@@ -17,8 +17,10 @@ const mutations = {
   }
 }
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   strict: process.env.NODE_ENV !== 'production',
   state,
   mutations
 })
+
+export default store;

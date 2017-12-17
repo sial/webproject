@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import router from './router/index'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/admin-lte/dist/css/AdminLTE.min.css"
 import "../node_modules/font-awesome/css/font-awesome.min.css"

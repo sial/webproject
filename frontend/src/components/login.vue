@@ -1,4 +1,4 @@
-<template>
+<template >
   <div class="login-page">
     <div class="login-box">
       <div class="login-logo">
@@ -7,7 +7,7 @@
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="../../index2.html" method="post">
+        <form>
           <div class="form-group has-feedback">
             <input type="login" class="form-control" placeholder="Login">
             <span class="fa fa-user form-control-feedback" aria-hidden="true"></span>
@@ -18,7 +18,10 @@
           </div>
           <div class="row">
             <div class="col-xs-4 pull-right">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+              <button v-on:click="greet"
+                      class="btn btn-primary btn-block btn-flat">
+                        Sign In
+              </button>
             </div>
           </div>
         </form>
@@ -29,6 +32,8 @@
 
 <script>
 document.title = 'Login';
+
+import '../store/auth';
 </script>
 
 <style scoped>

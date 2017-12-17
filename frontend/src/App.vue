@@ -5,8 +5,8 @@
 </template>
 
 <script>
-  import router from './router'
-  import store from './store'
+  import router from './router/index'
+  import store from './store/index'
 
 
   export default {

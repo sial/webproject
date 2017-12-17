@@ -1,5 +1,5 @@
-import router from './router'
-import store from './store'
+import router from '../router/index'
+import store from './index'
 
 export default {
   name: 'login',
@@ -20,7 +20,7 @@ export default {
     login () {
       this.loader = true
       this.infoError = false
-      this.$http.post('https://your-api-url.com/login', {
+      this.$http.post('http://localhost:8080/login', {
         email: this.email,
         password: this.password
       }).then((response) => {
@@ -32,6 +32,14 @@ export default {
         this.loader = false
         this.password = ''
       })
+    },
+    greet: function (event) {
+      // `this` внутри методов указывает на экземпляр Vue
+      alert('Привет, ' + this.email + '!')
+      // `event` — нативное событие DOM
+      if (event) {
+        alert(event.target.tagName)
+      }
     }
   }
 }

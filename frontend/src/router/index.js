@@ -2,14 +2,20 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import login from '../components/login.vue'
 import index from '../components/index.vue'
+import logout from '../components/logout.vue'
 
-export default new Router({
+const router = new Router({
   mode: "history",
   routes: [
     {
       path: '/login',
       name: 'login',
       component: login,
+    },
+    {
+      path: '/logout',
+      name: 'logout',
+      component: logout
     },
     {
       path: '/',
@@ -19,5 +25,6 @@ export default new Router({
   ]
 })
 
+export default router;
 
 Vue.use(Router)
