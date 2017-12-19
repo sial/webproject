@@ -5,19 +5,6 @@
 </template>
 
 <script>
-  import router from './router/index'
-  import store from './store/index'
-
-
-  export default {
-
-    beforeCreate() {
-      if (!store.state.isLogged) {
-        router.push('/login')
-      }
-    }
-  }
-
   document.title = 'Webproject';
 </script>
 
@@ -26,5 +13,4 @@
     font-family: 'Open-Sans Regular', sans-serif;
     height: 100%;
   }
-
 </style>

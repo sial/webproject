@@ -18,7 +18,7 @@
           </div>
           <div class="row">
             <div class="col-xs-4 pull-right">
-              <button v-on:click="greet"
+              <button
                       class="btn btn-primary btn-block btn-flat">
                         Sign In
               </button>

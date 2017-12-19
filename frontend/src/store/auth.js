@@ -11,6 +11,10 @@ export default {
       password: ''
     }
   },
+  isAuth () {
+    return store.state.isLogged
+  }
+  ,
   beforeCreate () {
     if (store.state.isLogged) {
       router.push('/')
@@ -32,14 +36,6 @@ export default {
         this.loader = false
         this.password = ''
       })
-    },
-    greet: function (event) {
-      // `this` внутри методов указывает на экземпляр Vue
-      alert('Привет, ' + this.email + '!')
-      // `event` — нативное событие DOM
-      if (event) {
-        alert(event.target.tagName)
-      }
     }
   }
 }
